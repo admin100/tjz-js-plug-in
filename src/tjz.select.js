@@ -1,5 +1,5 @@
 /**
- * author:tjzaimee
+ * author:tjzaimee@163.com
  * description:In the select tag plus tvalue = "Default", so that you can automatically selected. Need jQuery support.
  * date:2013-10-31
  */
