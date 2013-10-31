@@ -1,6 +1,7 @@
 tjz-js-plug-in
 ==============
 tjz-js-plug-in整合了工作中常用的JavaScript代码，方便快速开发使用。  
+注意使用前需先导入jQuery library。
 
 ####Features
 
