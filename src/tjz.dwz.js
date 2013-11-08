@@ -4,7 +4,7 @@
  * date:2013-11-07
  */
 
-/*
+/**
  * Replace dwz of validateCallback function, allowing the form to be submitted openTab
  */
 function validateOpenTab(form,navTabId,titleStr) {  
@@ -14,4 +14,13 @@ function validateOpenTab(form,navTabId,titleStr) {
     }  
     navTab.openTab(navTabId || "NavTabId", $form.attr("action"), { title:titleStr || "New Tab", fresh:false, data:$form.serializeArray() });
     return false;
+}
+/**
+ * Will select the label of the selected option tvalue value assigned to the specified id elements
+ * @param combox
+ */
+function tvalueToRef(combox){
+	 var $option=$(combox).children("option:selected");
+	 var ref = $(combox).attr("ref");
+	 $("#"+ref+"").val($option.attr("tvalue"));
 }
