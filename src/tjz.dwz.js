@@ -24,3 +24,23 @@ function tvalueToRef(combox){
 	 var ref = $(combox).attr("ref");
 	 $("#"+ref+"").val($option.attr("tvalue"));
 }
+function error(message){
+	if(message != ""){
+		alertMsg.error(message);
+	}
+}
+function correct(message){
+	if(message != ""){
+		alertMsg.correct(message);
+	}
+}
+function warn(message){
+	if(message != ""){
+		alertMsg.warn(message);
+	}
+}
+function info(message){
+	if(message != ""){
+		alertMsg.info(message);
+	}
+}
