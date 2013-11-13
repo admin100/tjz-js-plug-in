@@ -7,12 +7,12 @@
 /**
  * Replace dwz of validateCallback function, allowing the form to be submitted openTab
  */
-function validateOpenTab(form,navTabId,titleStr) {  
+function validateOpenTab(form,navTabId,titleStr,isFresh) {  
     var $form = $(form);  
     if (!$form.valid()) {  
         return false;  
     }  
-    navTab.openTab(navTabId || "NavTabId", $form.attr("action"), { title:titleStr || "New Tab", fresh:false, data:$form.serializeArray() });
+    navTab.openTab(navTabId || "NavTabId", $form.attr("action"), { title:titleStr || "New Tab", fresh:isFresh || false, data:$form.serializeArray() });
     return false;
 }
 /**
