@@ -2,6 +2,8 @@ tjz-js-plug-in
 ==============
 tjz-js-plug-in整合了工作中常用的JavaScript代码，方便快速开发使用。  
 注意使用前需先导入jQuery library。
+***
+如有使用上的疑问或建议，请发邮件至tjzaimee(at)163.com #把(at)改成@  
 
 ####Features
 
